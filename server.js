@@ -44,7 +44,7 @@ API DESIGN
 */
 
 app.get('/', (req, res) => {
-	res.send(/*'this works'*/database.users);
+	res.send('it is working');
 })
 
 
