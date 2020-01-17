@@ -21,7 +21,7 @@ const db = knex ({
 	client: 'pg',
 	connection: {
 		connectionString : 'process.env.DATABASE_URL',
-		ssl: true	
+		ssl: true,	
   }
 });
 
@@ -42,7 +42,7 @@ API DESIGN
 */
 
 app.get('/', (req, res) => {
-	res.send('it is working');
+	res.send(db.users);
 })
 
 
